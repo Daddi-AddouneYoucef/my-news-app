@@ -1,0 +1,25 @@
+.theme-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem; /* Base padding */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000; /* Ensure it's above other content */
+  transition: background-color 0.3s ease, padding 0.3s ease; /* Added padding to transition */
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--button-hover-bg); /* Uses variable from App.css or index.css */
+  padding: 0.25rem; /* Reduced padding on hover */
+}
+
+.theme-icon {
+  width: 30px; /* Icon size */
+  height: 30px; /* Icon size */
+}

@@ -1,0 +1,105 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root variables for light theme (default) */
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Theme Variables (Consolidated) */
+  --background-color: #ffffff;
+  --text-color: #213547;
+  --primary-color: #007bff;
+  --card-background: #f8f9fa;
+  --border-color: #dee2e6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --card-title-color: #333333;
+  --summary-color: #555555;
+  --sidebar-background: #f1f3f5;
+  --icon-color-filter: invert(0%); /* For light theme, icons are as is */
+  --button-hover-bg: rgba(0,0,0,0.1);
+}
+
+/* Dark theme variables applied to body.dark-theme */
+body.dark-theme {
+  --background-color: #1a1a1a; /* Darker background */
+  --text-color: rgba(255, 255, 255, 0.87); /* Light text */
+  --primary-color: #90caf9; /* Lighter blue for dark mode */
+  --card-background: #2a2a2a; /* Darker card background */
+  --border-color: #444444; /* Lighter border for contrast */
+  --shadow-color: rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+  --card-title-color: rgba(255, 255, 255, 0.87);
+  --summary-color: #cccccc;
+  --sidebar-background: #232323; /* Dark sidebar */
+  --icon-color-filter: invert(100%) hue-rotate(180deg); /* Invert and adjust for better dark mode icons if needed */
+  --button-hover-bg: rgba(255,255,255,0.2);
+}
+
+html, body { /* Apply themed background to both html and body */
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition */
+}
+
+/* General Styles */
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2; /* Consider making this a theme variable too */
+}
+
+body.dark-theme a:hover {
+  color: #747bff;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: var(--text-color);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a; /* This background might need to be themed */
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
