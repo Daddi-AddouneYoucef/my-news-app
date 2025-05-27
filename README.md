@@ -63,14 +63,6 @@ A modern, responsive news blog built with React that features tech articles, dar
 4. **Open your browser**
    - Navigate to `http://localhost:5173` (or the port shown in your terminal)
 
-### Building for Production
-
-```bash
-npm run build
-```
-
-This creates a `dist/` folder with optimized production files.
-
 ## Usage
 
 ### Browsing Articles
