@@ -1,0 +1,165 @@
+
+
+.article-detail-container {
+    font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif; 
+    max-width: 750px; 
+    margin: 40px auto; 
+    padding: 40px;  
+    border-radius: 12px;
+    background-color: var(--card-background); 
+    color: var(--text-color); 
+    box-shadow: 0 8px 25px var(--shadow-color); 
+    line-height: 1.6; 
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
+}
+.article-content p {
+  line-height: 2;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+
+}
+
+.article-detail-container h1 {
+    font-size: 2.8rem; 
+    font-weight: 100;
+    color: var(--text-color); 
+    margin-bottom: 15px; 
+    line-height: 1.3;
+}
+
+.article-detail-container .article-meta {
+    font-size: 0.9rem;
+    color: var(--summary-color); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; 
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.article-detail-container .article-image {
+    width: 100%;
+    max-height: 450px; 
+    object-fit: cover;
+    border-radius: 8px; 
+    margin-bottom: 30px;
+}
+
+.article-detail-container .article-content {
+    font-size: 1.1rem;
+    color: var(--text-color); 
+    text-align: left; 
+    margin-bottom: 40px;
+}
+
+.article-detail-container .article-content p {
+    margin-bottom: 1.2em; 
+}
+
+
+.engagement-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    color: var(--text-color); 
+}
+
+.like-dislike {
+  display: flex;
+  gap: 15px; 
+  margin-bottom: 25px;
+}
+
+.like-dislike button {
+  padding: 10px 20px; 
+  border: 1px solid var(--border-color);
+  background-color: var(--card-background); 
+  color: var(--text-color);
+  border-radius: 20px; 
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.like-dislike button:hover {
+  background-color: #eee; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body.dark-theme .like-dislike button:hover {
+    background-color: #444; 
+}
+
+
+.comments-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.comments-section ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.comments-section li {
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: left;
+  background-color: var(--card-background); 
+  color: var(--text-color);
+}
+
+body.dark-theme .comments-section li {
+    background-color: var(--sidebar-background); 
+}
+
+.comments-section .comment-meta {
+    font-size: 0.85rem;
+    color: var(--summary-color);
+    margin-bottom: 5px;
+}
+
+
+.add-comment h3 {
+  font-size: 1.3rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.add-comment textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  min-height: 100px;
+}
+
+.add-comment button {
+  padding: 12px 25px;
+  background: var(--primary-color); 
+  color: white;
+  border: none;
+  border-radius: 25px; 
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.add-comment button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}

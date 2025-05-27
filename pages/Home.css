@@ -1,0 +1,40 @@
+
+.article-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article-title-link:hover h2 {
+  color: var(--primary-color);
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.main-content {
+  flex: 3;
+  padding: 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.article-card {
+  gap: 1rem;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  box-shadow: 0 2px 8px var(--shadow-color);
+  
+}
+
